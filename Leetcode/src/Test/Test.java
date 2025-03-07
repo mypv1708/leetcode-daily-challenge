@@ -1,27 +1,21 @@
 package Test;
 
 public class Test {
-    static public String reversePrefix(String word, char ch) {
+    static String clearDigits(String s) {
         StringBuilder stack = new StringBuilder();
-        StringBuilder lastString = new StringBuilder();
 
-        for (int i = 0; i < word.length(); i++) {
-            if (word.charAt(i) == ch){
-                stack.append(word.charAt(i));
-                stack.reverse();
-                lastString.append(word.substring(i+1));
-                stack.append(lastString);
-                return stack.toString();
-            }
-            stack.append(word.charAt(i));
+        for (char c : s.toCharArray()) {
+            if (Character.isDigit(c)) {
+                if (stack.length() > 0) {
+                    stack.deleteCharAt(stack.length() - 1);
+                }
+            } else stack.append(c);
         }
         return stack.toString();
     }
 
 
     public static void main(String[] args) {
-        String word = "xyxzxe";
-        char ch = 'z';
-        System.out.println(reversePrefix(word,ch));
+        System.out.println(clearDigits("cb34"));
     }
 }
