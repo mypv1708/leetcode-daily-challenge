@@ -1,4 +1,4 @@
-package Test;
+package Easy.Array._1394_Find_Lucky_Integer_in_an_Array;
 
 import java.util.HashMap;
 import java.util.Map;
