@@ -1,4 +1,4 @@
-package Easy.HashMap._3005_Count_Elements_With_Maximum_Frequency;
+package Easy.HashTable._3005_Count_Elements_With_Maximum_Frequency;
 
 import java.util.*;
 
