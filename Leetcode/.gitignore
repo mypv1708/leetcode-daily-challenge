@@ -27,3 +27,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+#### New igore ###
+src/Test
+src/Other
