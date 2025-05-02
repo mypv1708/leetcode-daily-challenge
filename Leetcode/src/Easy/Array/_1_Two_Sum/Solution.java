@@ -2,17 +2,16 @@ package Easy.Array._1_Two_Sum;
 
 import java.util.Arrays;
 
-public class _1_Two_Sum {
+public class Solution {
     public static int[] twoSum(int[] nums, int target) {
-        int n = nums.length;
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 1; j < n; j++) {
-                if (nums[i] + nums[j] == target && i != j) {
-                    return new int[]{i, j};
+        for (int i = 1; i < nums.length; i++) {
+            for (int j = i; j < nums.length; j++) {
+                if (nums[j] + nums[j - i] == target) {
+                    return new int[]{j, j - i};
                 }
             }
         }
-        return null;
+        return new int[]{};
     }
 
     public static void main(String[] args) {

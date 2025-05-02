@@ -1,4 +1,4 @@
-package Hard.TwoPointer;
+package Hard._4_Median_of_Two_Sorted_Arrays;
 
 public class _4_Median_of_Two_Sorted_Arrays {
     static double findMedianSortedArrays(int[] nums1, int[] nums2) {

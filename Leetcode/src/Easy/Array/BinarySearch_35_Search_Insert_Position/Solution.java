@@ -1,6 +1,6 @@
 package Easy.Array.BinarySearch_35_Search_Insert_Position;
 
-public class _35_Search_Insert_Position {
+public class Solution {
     static int searchInsert(int[] nums, int target) {
         int start = 0;
         int end = nums.length - 1;

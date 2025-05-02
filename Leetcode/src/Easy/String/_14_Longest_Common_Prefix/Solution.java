@@ -1,6 +1,6 @@
 package Easy.String._14_Longest_Common_Prefix;
 
-public class _14_Longest_Common_Prefix {
+public class Solution {
     static String longestCommonPrefix(String[] strs) {
         String prefix = strs[0];
 

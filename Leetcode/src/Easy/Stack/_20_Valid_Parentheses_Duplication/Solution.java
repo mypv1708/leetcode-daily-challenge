@@ -2,7 +2,7 @@ package Easy.Stack._20_Valid_Parentheses_Duplication;
 
 import java.util.Stack;
 
-public class _20_Valid_Parentheses_Duplication {
+public class Solution {
     public static boolean isValid(String s) {
         Stack<Character> characterStack = new Stack<>();
         for (char c : s.toCharArray()) {

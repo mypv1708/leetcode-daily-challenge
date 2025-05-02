@@ -2,7 +2,7 @@ package Easy.Matrix._566_Reshape_the_Matrix;
 
 import java.util.Arrays;
 
-public class _566_Reshape_the_Matrix {
+public class Solution {
 
     static int[][] matrixReshape(int[][] matrixA, int r, int c) {
         int m = matrixA.length;

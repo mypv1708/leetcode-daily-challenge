@@ -2,7 +2,7 @@ package Easy.TwoPointers._88_Merge_Sorted_Array;
 
 import java.util.Arrays;
 
-public class _88_Merge_Sorted_Array {
+public class Solution {
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
         int midx = m - 1;
         int nidx = n - 1;

@@ -1,20 +1,21 @@
-package Easy.TwoPointers._125_Valid_Palindrome;
+package Easy.String._125_Valid_Palindrome;
 
-public class _125_Valid_Palindrome {
+public class Solution {
     public static boolean isPalindrome(String s) {
-        if (s.isEmpty()) return true;
-
+        if (s.isEmpty()){
+            return true;
+        }
         int start = 0;
         int last = s.length() - 1;
-        while (start <= last) {
+        while (start <= last){
             char currFirst = s.charAt(start);
             char currLast = s.charAt(last);
-            if (!Character.isLetterOrDigit(currFirst)) {
+            if (!Character.isLetterOrDigit(currFirst)){
                 start++;
             } else if (!Character.isLetterOrDigit(currLast)) {
                 last--;
             } else {
-                if (Character.toLowerCase(currFirst) != Character.toLowerCase(currLast)) {
+                if (Character.toLowerCase(currFirst) != Character.toLowerCase(currLast)){
                     return false;
                 }
                 start++;

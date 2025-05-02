@@ -1,6 +1,6 @@
-package Easy.TwoPointers._27_Remove_Element;
+package Easy.Array._27_Remove_Element;
 
-public class _27_Remove_Element {
+public class Solution {
     public static int removeElement(int[] nums, int val) {
         int index = 0;
         for (int i = 0; i < nums.length; i++) {

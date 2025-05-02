@@ -1,6 +1,6 @@
-package Easy.Array._26_Remove_Duplicates_from_Sorted_Array;
+package Easy.TwoPointers._26_Remove_Duplicates_from_Sorted_Array;
 
-public class _26_Remove_Duplicates_from_Sorted_Array_Duplication {
+public class Solution {
     public static int removeDuplicates(int[] nums) {
         int k = 1;
         for (int i = 1; i < nums.length; i++) {

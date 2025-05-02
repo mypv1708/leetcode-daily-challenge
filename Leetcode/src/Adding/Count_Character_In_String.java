@@ -27,7 +27,7 @@ public class Count_Character_In_String {
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);
         String input;
-        Integer count = 0;
+        int count = 0;
 
         while (myObj.hasNextLine()) {
             count++;
